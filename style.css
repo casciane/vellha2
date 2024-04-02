@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 8px;
+}
+
+ .cell {
+    border: 3px solid #fff;
+    border-radius: 20px;
+    background: #5d9ef3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 64px;
+    font-family: sans-serif;
+    font-size: 6em;
+    text-shadow:#00d0ad 10px 10px 10px;
+} 
+
+
+ button {
+    margin: 20px;
+    padding: 10px;
+    font-size: 1.1em;
+    border-radius: 10px;
+    
+
+} 
+
+.game {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   text-align: center;
+} 
+
+footer{
+    text-align: center;
+    font-size: 1.2em;
+    
+}
+
+.dark-mode{
+    color: antiquewhite;
+    background-color: black;
+    
+}
+
+.dark-mode .cell{
+
+    background: gray;
+    text-shadow: white;
+    border: black;
+}
